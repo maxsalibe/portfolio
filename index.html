@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximiliano Salibe | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
@@ -30,7 +31,7 @@
             <source src="assets/video/hero.mp4" />
         </video>
     </header>
-    <nav id="navbar">
+    <nav id="navbar" class="open">
         <div>
             <a href="/">
                 <img class="circle" src="/assets/img/logos/small.png" alt="small logo" />
@@ -106,7 +107,7 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="assets/img/experience/images.jpeg" alt="sad emoji">
                     <h4>Nothing to show so far</h4>
                 </a>
@@ -159,7 +160,17 @@
         <small>Web design belongs to academia-x.com &copy; 2022 All rights reserved</small> <br>
         <small>Some details in the implementation, the info in it and lots of mistakes already fixed <br> and not visible anymore were made by me 😎 MS</small>
     </footer>
+    <div id="myModal" class="eins-modal eins-modal-dark">
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+      
+          Creo que acá colocaría ideas para mi primer trabajo.
+          
+          <button class="eins-modal-close-button">OK</button>
+        </div>
+      </div>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fixed.js"></script>
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html>
